@@ -292,6 +292,10 @@ header h3.drkmd,
         padding-bottom: 9rem;
     }
 
+    .dashboard h3 {
+        font-size: 1.9rem;
+    }
+
     .switch {
         margin: 0 0 0 auto;
         border-top: 0;
@@ -328,10 +332,6 @@ header h3.drkmd,
     .overview {
         padding-left: 9rem;
         padding-right: 9rem;
-    }
-
-    .dashboard h3 {
-        font-size: 1.9rem;
     }
 
     .overview {
