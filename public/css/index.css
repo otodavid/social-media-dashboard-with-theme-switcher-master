@@ -27,7 +27,7 @@ header {
 }
 
 header h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: hsl(230, 17%, 14%);
 }
 
@@ -51,9 +51,8 @@ header p {
 #toggle {
     position: relative;
     -webkit-appearance: none;
-    appearance: none;
-    width: 45px;
-    height: 27px;
+    width: 43px;
+    height: 22px;
     background-color:hsl(230, 22%, 74%);
     border-radius: 25px;
     cursor: pointer;
@@ -64,10 +63,10 @@ header p {
     content: "";
     position: absolute;
     background-color: #fff;
-    width: 19px;
-    height: 19px;
-    top: 4px;
-    right: 4px;
+    width: 17px;
+    height: 17px;
+    top: 3px;
+    right: 3px;
     border-radius: 50%;
     transition: all .3s ease-in-out;
 }
@@ -77,7 +76,7 @@ header p {
 }
 
 #toggle:checked::before {
-    right: 22px;
+    right: 23px;
 }
 
 #toggle:checked::before {
@@ -88,7 +87,7 @@ header p {
     width: 100%;
     padding: 0 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     margin-top: -50px;
 }
@@ -141,7 +140,7 @@ header p {
 }
 
 .sc-media h2 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     padding-top: .3em;
 }
 
@@ -172,7 +171,7 @@ header p {
 }
 
 .overview {
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 .overview h3 {
@@ -180,9 +179,8 @@ header p {
 }
 
 .detail-cards {
-    padding: .5rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
 
@@ -207,7 +205,7 @@ header p {
 
 .activity-no {
     color: hsl(230, 17%, 14%);
-    font-size: 2.7em;
+    font-size: 2em;
     font-weight: 700;
     align-self: center;
 }
@@ -276,14 +274,14 @@ header h3.drkmd,
     color: hsl(228, 34%, 66%);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .container {
         padding-bottom: 4em;
     }
 
     .dashboard, .all-sc-media, .overview {
-        padding-left: 10rem;
-        padding-right: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .dashboard {
@@ -300,7 +298,7 @@ header h3.drkmd,
     }
 
     #toggle {
-        margin-left: 8px;
+        margin-left: 10px;
     }
 
     .dashboard.drkmd .switch:hover {
@@ -318,11 +316,25 @@ header h3.drkmd,
     }
 }
 
-@media screen and (min-width: 1104px) and (max-width: 1439px) {
-
-    .all-sc-media, 
+@media screen and (min-width: 1100px) {
+    .all-sc-media,
     .detail-cards {
-    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-    gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+        gap: 2rem;
+    }
+
+    .dashboard,
+    .all-sc-media,
+    .overview {
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+
+    .dashboard h3 {
+        font-size: 1.9rem;
+    }
+
+    .overview {
+        padding-top: 0;
     }
 }
